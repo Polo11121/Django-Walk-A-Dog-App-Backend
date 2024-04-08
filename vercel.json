@@ -1,7 +1,7 @@
 {
   "builds": [
     {
-      "src": "walk_a_dog/wsgi.py",
+      "src": "walk_a_dog/asgi.py",
       "use": "@vercel/python",
       "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }
@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "walk_a_dog/wsgi.py"
+      "dest": "walk_a_dog/asgi.py"
     }
   ]
 }
